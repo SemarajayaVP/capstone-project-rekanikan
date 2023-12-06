@@ -9,3 +9,6 @@ https://github.com/ArisandiYudiarta/rekanikan-api
 
 Front-End | Mobile Development
 https://github.com/nandaadyatma/rekanikan-mobile
+
+Dataset RekanIkan
+https://drive.google.com/drive/folders/1ACWuMCc0erdVTqu5ctNWUsZ4wHO7QqQu?usp=sharing
