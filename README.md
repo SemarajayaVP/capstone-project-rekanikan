@@ -12,3 +12,6 @@ https://github.com/nandaadyatma/rekanikan-mobile
 
 Dataset RekanIkan
 https://drive.google.com/drive/folders/1ACWuMCc0erdVTqu5ctNWUsZ4wHO7QqQu?usp=sharing
+
+Feeder Arduino Code
+https://github.com/nandaadyatma/rekanikan-feeder
