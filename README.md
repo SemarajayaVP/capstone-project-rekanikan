@@ -16,7 +16,7 @@ https://drive.google.com/drive/folders/1ACWuMCc0erdVTqu5ctNWUsZ4wHO7QqQu?usp=sha
 Feeder Arduino Code
 https://github.com/nandaadyatma/rekanikan-feeder
 
-Download the app **[here]([https://www.unud.ac.id/](https://drive.google.com/drive/folders/1QljgKUG8qLlGLjXl19limGA9DE6__1D4?usp=sharing))**
+Download the app [here](https://drive.google.com/drive/folders/1QljgKUG8qLlGLjXl19limGA9DE6__1D4?usp=sharing)
 
 # Our squad - CH2-PS074
 
