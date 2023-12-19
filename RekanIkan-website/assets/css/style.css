@@ -460,122 +460,95 @@ h6 {
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
-#hero {
+.hero {
   width: 100%;
-  height: 90vh;
-  background: url("../img/hero-bg.jpg") top center;
+  height: 100vh;
+  background: url(../img/hero-bg.png) top center no-repeat;
   background-size: cover;
-  margin-bottom: -200px;
 }
 
-#hero .container {
-  display: flex;
-  gap: 30%;
-}
-
-.container .container-hero {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.container .img-hero img{
-  height: 400px;
-  margin: 0px;
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
-  border-radius: 20px;
-  animation: floatAnimation 3s infinite;
-}
-
-@keyframes floatAnimation {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-
-
-
-
-
-
-#hero h1 {
+.hero h1 {
   margin: 0;
   font-size: 48px;
   font-weight: 700;
-  line-height: 56px;
-  text-transform: uppercase;
-  color: #2c4964;
+  color: #012970;
 }
 
-#hero h2 {
-  color: #2c4964;
-  margin: 10px 0 0 0;
-  font-size: 24px;
+.hero h2 {
+  color: #444444;
+  margin: 15px 0 0 0;
+  font-size: 26px;
 }
 
-#hero .btn-get-started {
-  font-family: "Raleway", sans-serif;
-  text-transform: uppercase;
-  font-weight: 500;
-  font-size: 14px;
-  letter-spacing: 1px;
-  width: fit-content;
-  padding: 12px 35px;
+.hero .btn-get-started {
   margin-top: 30px;
-  border-radius: 50px;
+  line-height: 0;
+  padding: 15px 40px;
+  border-radius: 4px;
   transition: 0.5s;
   color: #fff;
-  background: #1977cc;
+  background: #4154f1;
+  box-shadow: 0px 5px 30px rgba(65, 84, 241, 0.4);
 }
 
-#hero .btn-get-started:hover {
-  background: #3291e6;
+.hero .btn-get-started span {
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.hero .btn-get-started i {
+  margin-left: 5px;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.hero .btn-get-started:hover i {
+  transform: translateX(5px);
+}
+
+.hero .hero-img {
+  text-align: right;
 }
 
 @media (min-width: 1024px) {
-  #hero {
+  .hero {
     background-attachment: fixed;
   }
 }
 
-@media (max-width: 992px) {
-  #hero {
-    margin-bottom: 0;
-    height: 100vh;
+@media (max-width: 991px) {
+  .hero {
+    height: auto;
+    padding: 120px 0 60px 0;
   }
 
-  #hero .container {
-    flex-wrap: wrap-reverse;
-    gap: 40px;
-    justify-content: center;
-  }
-
-  .container .container-hero {
+  .hero .hero-img {
     text-align: center;
-    align-items: center;
+    margin-top: 80px;
   }
 
-  #hero h1 {
-    font-size: 28px;
-    line-height: 36px;
-  }
-
-  #hero h2 {
-    font-size: 18px;
-    line-height: 24px;
-    margin-bottom: 30px;
+  .hero .hero-img img {
+    width: 80%;
   }
 }
 
-@media (max-height: 600px) {
-  #hero {
-    height: 110vh;
+@media (max-width: 768px) {
+  .hero {
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .hero h2 {
+    font-size: 24px;
+  }
+
+  .hero .hero-img img {
+    width: 100%;
   }
 }
 
@@ -699,7 +672,7 @@ section {
 .why-us .content {
   padding: 30px;
   background: #1977cc;
-  border-radius: 4px;
+  border-radius: 10px;
   color: #fff;
 }
 
@@ -711,6 +684,7 @@ section {
 
 .why-us .content p {
   margin-bottom: 30px;
+  font-size: 20px;
 }
 
 .why-us .content .more-btn {
@@ -755,6 +729,7 @@ section {
 .why-us .icon-boxes .icon-box p {
   font-size: 15px;
   color: #848484;
+  font-size: 20px;
 }
 
 /*--------------------------------------------------------------
@@ -765,6 +740,8 @@ section {
   color: #4b7dab;
   margin-bottom: 15px;
 }
+
+
 
 .about .icon-boxes h3 {
   font-size: 28px;
@@ -1050,6 +1027,39 @@ section {
 }
 
 /*--------------------------------------------------------------
+# Values
+--------------------------------------------------------------*/
+.values .box {
+  padding: 30px;
+  box-shadow: 0px 0 5px rgba(1, 41, 112, 0.08);
+  text-align: center;
+  border-radius: 10px;
+  transition: 0.3s;
+  height: 100%;
+}
+
+.values .box img {
+  padding: 30px 50px;
+  transition: 0.5s;
+  transform: scale(1.1);
+}
+
+.values .box h3 {
+  font-size: 24px;
+  color: #012970;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+
+.values .box:hover {
+  box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
+}
+
+.values .box:hover img {
+  transform: scale(1);
+}
+
+/*--------------------------------------------------------------
 # Appointments
 --------------------------------------------------------------*/
 .appointment .php-email-form {
@@ -1209,45 +1219,45 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Doctors
+# team
 --------------------------------------------------------------*/
-.doctors {
+.team {
   background: #fff;
 }
 
-.doctors .member {
+.team .member {
   position: relative;
   box-shadow: 0px 2px 15px rgba(44, 73, 100, 0.08);
   padding: 30px;
   border-radius: 10px;
 }
 
-.doctors .member .pic {
+.team .member .pic {
   overflow: hidden;
   width: 180px;
   border-radius: 50%;
 }
 
-.doctors .member .pic img {
+.team .member .pic img {
   transition: ease-in-out 0.3s;
 }
 
-.doctors .member:hover img {
+.team .member:hover img {
   transform: scale(1.1);
 }
 
-.doctors .member .member-info {
+.team .member .member-info {
   padding-left: 30px;
 }
 
-.doctors .member h4 {
+.team .member h4 {
   font-weight: 700;
   margin-bottom: 5px;
   font-size: 20px;
   color: #2c4964;
 }
 
-.doctors .member span {
+.team .member span {
   display: block;
   font-size: 15px;
   padding-bottom: 10px;
@@ -1255,7 +1265,7 @@ section {
   font-weight: 500;
 }
 
-.doctors .member span::after {
+.team .member span::after {
   content: "";
   position: absolute;
   display: block;
@@ -1266,19 +1276,19 @@ section {
   left: 0;
 }
 
-.doctors .member p {
+.team .member p {
   margin: 10px 0 0 0;
   font-size: 14px;
 }
 
-.doctors .member .social {
+.team .member .social {
   margin-top: 12px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
 }
 
-.doctors .member .social a {
+.team .member .social a {
   transition: ease-in-out 0.3s;
   display: flex;
   align-items: center;
@@ -1289,17 +1299,17 @@ section {
   background: #a0bcd5;
 }
 
-.doctors .member .social a i {
+.team .member .social a i {
   color: #fff;
   font-size: 16px;
   margin: 0 2px;
 }
 
-.doctors .member .social a:hover {
+.team .member .social a:hover {
   background: #1977cc;
 }
 
-.doctors .member .social a+a {
+.team .member .social a+a {
   margin-left: 8px;
 }
 
