@@ -16,6 +16,9 @@ https://github.com/DarmaYudaa/rekanikan-model
 Feeder Arduino Code
 https://github.com/nandaadyatma/rekanikan-feeder
 
+Deploy ML Model
+https://github.com/SemarajayaVP/deploy-ml-rekanikan.git
+
 Download the app [here](https://drive.google.com/drive/folders/1QljgKUG8qLlGLjXl19limGA9DE6__1D4?usp=sharing)
 
 # Our squad - CH2-PS074
